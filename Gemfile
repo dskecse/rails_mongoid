@@ -4,6 +4,7 @@ gem 'rails', '3.2.9'
 
 gem 'haml-rails'
 gem 'mongoid'
+gem 'nested_form'
 gem 'responders'
 gem 'thin'
 
