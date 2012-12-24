@@ -1,4 +1,4 @@
-= nested_form_for @product do |f|
+= simple_nested_form_for @product do |f|
   - if @product.errors.any?
     #error_explanation
       %h2= "#{pluralize(@product.errors.count, "error")} prohibited this product from being saved:"
@@ -6,18 +6,11 @@
         - @product.errors.full_messages.each do |msg|
           %li= msg
 
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :price
-    = f.text_field :price
-  .field
-    = f.label :released_on
-    = f.text_field :released_on
+  = f.input :name
+  = f.input :price
+  = f.input :released_on
 
   = f.fields_for :reviews
   %p= f.link_to_add 'Add a review', :reviews
 
-  .actions
-    = f.submit 'Save'
+  = f.button :submit

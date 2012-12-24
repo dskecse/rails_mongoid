@@ -6,6 +6,7 @@ gem 'haml-rails'
 gem 'mongoid'
 gem 'nested_form'
 gem 'responders'
+gem 'simple_form'
 gem 'thin'
 
 # Gems used only for assets and not required
