@@ -10,6 +10,13 @@
   %b Released on:
   = @product.released_on
 
+%p
+  %b Reviews:
+  - if @product.reviews.any?
+    = render 'reviews', product: @product
+  - else
+    %p= 'No reviews for the product found. Be the first to review.'
+
 = link_to 'Edit', edit_product_path(@product)
 \|
 = link_to 'Back', products_path
