@@ -1,1 +1,1 @@
-A Sample Rails application that uses Mongoid.
+A Sample Rails application that uses Mongoid + Elasticsearch.

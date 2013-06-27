@@ -2,12 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
 
-gem 'haml-rails'
 gem 'mongoid'
-gem 'nested_form'
-gem 'responders'
-gem 'simple_form'
-gem 'thin'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -17,4 +12,10 @@ group :assets do
   gem 'uglifier',     '>= 1.0.3'
 end
 
+gem 'haml-rails'
 gem 'jquery-rails'
+gem 'nested_form'
+gem 'responders'
+gem 'simple_form'
+gem 'thin'
+gem 'tire'
