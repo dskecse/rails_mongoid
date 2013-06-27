@@ -11,4 +11,6 @@ class Product
   accepts_nested_attributes_for :reviews, allow_destroy: true
 
   attr_accessible :name, :price, :released_on, :reviews_attributes
+
+  index({ name: 1, released_on: 1 })
 end
