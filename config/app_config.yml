@@ -1,0 +1,12 @@
+common: &common
+  host: '127.0.0.1:3000'
+  elasticsearch_url: 'http://127.0.0.1:9200'
+
+production:
+  <<: *common
+
+development:
+  <<: *common
+
+test:
+  <<: *common
